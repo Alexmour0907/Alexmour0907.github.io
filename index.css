@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+}
+
+#line {
+    border: 10px solid black;
+    padding: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.nav {
+    display: flex;
+    background-color: aquamarine;
+    padding: 10px;
+    
+}
+
+.nav a {
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: large;
+    font-weight: bold;
+    padding: 1rem;
+    color: black;  
+    border-radius: 1rem;
+}
+
+.nav a:hover{
+    background-color: azure;
+}
+
+ul {
+display: flex;
+list-style-type: none;
+}
