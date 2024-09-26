@@ -1,13 +1,32 @@
-.item1 {grid-area: header;}
-.item2 {grid-area: menu;}
+.item1 {grid-area: menu;}
+.item2 {grid-area: header;}
 .item3 {grid-area: main;}
 .item4 {grid-area: footer;}
 
-.gird-container {
-    
-    grid-column: 
-    grid-template-columns: ;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        'menu  menu   menu   menu  menu  menu'
+        'header header header header header header'
+        'main   main    main    main    main    main'
+        'footer footer  footer  footer  footer  footer';
 }
+
+.item2 { /* header */
+    background: linear-gradient(270deg, #b0b5ad, #050609);
+    color: white;
+    text-align: center;
+
+    /* Bruker flexbox for å plassere bildet/logoen og teksten i midten av headeren */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 
 * {
     padding: 0;
