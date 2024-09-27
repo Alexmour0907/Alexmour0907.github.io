@@ -5,7 +5,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto 1fr auto auto;
     grid-template-areas:
         'menu  menu   menu   menu  menu  menu'

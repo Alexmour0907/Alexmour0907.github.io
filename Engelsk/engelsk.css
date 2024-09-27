@@ -5,7 +5,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto 1fr auto auto;
     grid-template-areas:
         'menu  menu   menu   menu  menu  menu'
@@ -36,7 +36,7 @@
  
 ul {
     list-style: none;
-    background: #22438c;
+    background: #EE2536;
 }
  
 ul li {
@@ -59,14 +59,14 @@ ul li ul.dropdown li {
  
 ul li ul.dropdown {
     width: 100%;
-    background: #22438C;
+    background: #EE2536;
     position: absolute;
     z-index: 999;
     display: none;
 }
  
 ul li a:hover {
-    background: #112C66;
+    background: #991b0f;
 }
  
 ul li:hover ul.dropdown {
