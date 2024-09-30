@@ -19,7 +19,7 @@
     background-image: url(/singapore-header.jpg); /* Sett filnavnet eller URL-en til bildet */
     background-size: cover; /* Gjør at bildet dekker hele området */
     background-position: center; /* Sentrer bildet */
-    height: 400px; /* Høyden på headeren, kan justeres */
+    height: 500px; /* Høyden på headeren, kan justeres */
     display: flex;
     align-items: center; /* Plasserer innholdet vertikalt sentrert */
     justify-content: center; /* Plasserer innholdet horisontalt sentrert */
@@ -28,6 +28,21 @@
     text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* Legg til en skygge bak teksten for bedre lesbarhet */
 }
 
+
+#overskrift{
+padding-top: 40px;
+padding-left: 10px;
+padding-bottom: 20px;
+display: flex;
+align-items: center; /* Plasserer innholdet vertikalt sentrert */
+justify-content: center; /* Plasserer innholdet horisontalt sentrert */
+}
+
+.item3{
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+}
 
 * {
     padding: 0;
@@ -73,3 +88,4 @@ ul li a:hover {
 ul li:hover ul.dropdown {
     display: block;
 }
+
