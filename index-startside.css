@@ -14,6 +14,11 @@
         'footer footer  footer  footer  footer  footer';
 }
 
+.item1{
+        position: sticky;
+        top: 0;
+    }
+}
 .item2 { /* header */
     background: linear-gradient(270deg, #b0b5ad, #050609);
     color: white;

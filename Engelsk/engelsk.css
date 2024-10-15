@@ -14,6 +14,10 @@
         'footer footer  footer  footer  footer  footer';
 }
 
+.item1 {
+    position: sticky;
+    top: 0;
+}
 /* Header (item2) med stort bakgrunnsbilde */
 .item2 {
     background-image: url(/singapore-header.jpg); /* Sett filnavnet eller URL-en til bildet */
@@ -42,6 +46,10 @@ justify-content: center; /* Plasserer innholdet horisontalt sentrert */
     padding-right: 50px;
     padding-left: 50px;
     padding-bottom: 100px;
+}
+
+.item5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
