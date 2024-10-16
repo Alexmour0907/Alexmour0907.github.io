@@ -1,0 +1,134 @@
+.item1 {grid-area: menu;}
+.item2 {grid-area: header;}
+.item3 {grid-area: main;}
+.item4 {grid-area: footer;}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-areas:
+        'menu  menu   menu   menu  menu  menu'
+        'header header header header header header'
+        'main   main    main    main    main    main'
+        'footer footer  footer  footer  footer  footer';
+}
+
+.item1 {
+    position: sticky;
+    top: 0;
+}
+/* Header (item2) med stort bakgrunnsbilde */
+.item2 {
+    background-image: url(/Bilder/singapore-header.jpg); /* Sett filnavnet eller URL-en til bildet */
+    background-size: cover; /* Gjør at bildet dekker hele området */
+    background-position: center; /* Sentrer bildet */
+    height: 500px; /* Høyden på headeren, kan justeres */
+    display: flex;
+    align-items: center; /* Plasserer innholdet vertikalt sentrert */
+    justify-content: center; /* Plasserer innholdet horisontalt sentrert */
+    color: white; /* Fargen på teksten */
+    font-size: 3em; /* Størrelsen på teksten */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* Legg til en skygge bak teksten for bedre lesbarhet */
+}
+
+
+#overskrift{
+padding-top: 40px;
+padding-left: 10px;
+padding-bottom: 20px;
+display: flex;
+align-items: center; /* Plasserer innholdet vertikalt sentrert */
+justify-content: center; /* Plasserer innholdet horisontalt sentrert */
+}
+
+.item3{
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+}
+
+
+.item4{
+    background-color: #EE2536;
+    max-width: 100%;
+    padding-bottom: 30px;
+}
+
+.font{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.zoo_bilde{
+    max-width: 400px;
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 50px;
+
+}
+
+.gardens_bay{
+    max-width: 400px;
+    float: right;
+    margin-left: 20px;
+    margin-top: -40px;
+
+}
+
+.museum_picture{
+    max-width: 300px;
+    float: right;
+    margin-left: 10px;
+    margin-top: -210px;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+ 
+ul {
+    list-style: none;
+    background: #EE2536;
+}
+ 
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ 
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+ 
+ul li ul.dropdown li {
+    display: block;
+}
+ 
+ul li ul.dropdown {
+    width: 100%;
+    background: #EE2536;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ 
+ul li a:hover {
+    background: #991b0f;
+}
+ 
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+
