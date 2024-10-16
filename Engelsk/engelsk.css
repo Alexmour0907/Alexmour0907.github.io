@@ -79,11 +79,11 @@ justify-content: center; /* Plasserer innholdet horisontalt sentrert */
 }
 
 .museum_picture{
+    max-width: 300px;
     float: right;
     margin-left: 10px;
     margin-top: -210px;
-    display: block;
-    max-width: 300px;
+
 }
 
 * {
@@ -129,60 +129,6 @@ ul li a:hover {
  
 ul li:hover ul.dropdown {
     display: block;
-}
-
-
-/* For mobil, eller portrerttmodus, med låg oppløysing */
-@media screen and (max-width: 800px) {
-    /* Når skjermstørrelsen blir  */
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas:
-            'header'
-            'menu'
-            'main'
-            'footer';
-    }
-
-    /* 
-        Endrer menyen sitt design for mobil.
-        Menyelementene ligg ikkje lenger under kvarandre
-        (frå column til row). I tillegg så midtstiller
-        eg elementa i menyen.
-    */
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    /* Når skjermen er liten, så vil biletet i main ta heile bredda. */
-    .museum_picture {
-        float: none;
-        display: block;
-        max-width: 500px;
-
-    }
-
-    /* Skriftstørrelsen i header blir mindre på mobil. */
-    #tittel {
-        font-size: 1rem;
-    }
-
-    .re-order .row{
-        display: flex;
-        display: -ms-flex;
-        flex-direction: column;
-    }
-    .re-order .row .first{
-        order: 2;
-    }
-
-    .re-order .row .second{
-        order: 1;
-    }
 }
 
 
