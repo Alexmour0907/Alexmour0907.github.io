@@ -48,24 +48,10 @@ justify-content: center; /* Plasserer innholdet horisontalt sentrert */
     padding-bottom: 100px;
 }
 
-
-.item4{
-    background-color: #EE2536;
-    max-width: 100%;
-    padding-bottom: 30px;
-}
-
 .item5{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 15px;
-    padding-bottom: 5px;
 }
 
-.item6{
-    max-width: 400px;
-    float: right;
-
-}
 
 * {
     padding: 0;
@@ -111,5 +97,4 @@ ul li a:hover {
 ul li:hover ul.dropdown {
     display: block;
 }
-
 
