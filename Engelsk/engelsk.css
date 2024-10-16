@@ -55,15 +55,34 @@ justify-content: center; /* Plasserer innholdet horisontalt sentrert */
     padding-bottom: 30px;
 }
 
-.item5{
+.font{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 15px;
     padding-bottom: 5px;
 }
 
-.item6{
+.zoo_bilde{
     max-width: 400px;
     float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 50px;
+
+}
+
+.gardens_bay{
+    max-width: 400px;
+    float: right;
+    margin-left: 20px;
+    margin-top: -40px;
+
+}
+
+.museum_picture{
+    max-width: 300px;
+    float: right;
+    margin-left: 10px;
+    margin-top: -210px;
 
 }
 

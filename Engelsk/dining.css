@@ -20,7 +20,7 @@
 }
 /* Header (item2) med stort bakgrunnsbilde */
 .item2 {
-    background-image: url(/Bilder/singapore-header.jpg); /* Sett filnavnet eller URL-en til bildet */
+    background-image: url(/Bilder/dining_header.jpg); /* Sett filnavnet eller URL-en til bildet */
     background-size: cover; /* Gjør at bildet dekker hele området */
     background-position: center; /* Sentrer bildet */
     height: 500px; /* Høyden på headeren, kan justeres */
@@ -48,8 +48,41 @@ justify-content: center; /* Plasserer innholdet horisontalt sentrert */
     padding-bottom: 100px;
 }
 
-.item5{
+.font{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.syns{
+    max-width: 300px;
+    float: right;
+    margin-left: 10px;
+    margin-top: -70px;
+    margin-right: 50px;
+
+}
+
+.syns{
+    max-width: 300px;
+    float: right;
+
+}
+
+.Ocean{
+    max-width: 300px;
+    float: right;
+    margin-left: 10px;
+    margin-top:  -320px;
+    margin-right: 50px;
+
+}
+
+.wild{
+    max-width: 300px;
+    float: right;
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-right: 50px;
+
 }
 
 

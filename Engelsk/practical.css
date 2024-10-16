@@ -49,14 +49,6 @@ justify-content: center; /* Plasserer innholdet horisontalt sentrert */
     background-color: aliceblue;
 }
 
-.item4{
-    background-color: #EE2536;
-    width: 100%;
-    padding-bottom: 30px;
-    position: fixed;
-    bottom: 0;
-}
-
 .item5{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -106,4 +98,11 @@ ul li:hover ul.dropdown {
     display: block;
 }
 
-
+ /*.item4{
+    background-color: aliceblue;
+    width: 100%;
+    padding-bottom: 30px;
+    position: fixed;
+    bottom: 0;
+} */
+ 
