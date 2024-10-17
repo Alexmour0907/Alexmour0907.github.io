@@ -46,6 +46,7 @@ justify-content: center; /* Plasserer innholdet horisontalt sentrert */
     padding-right: 50px;
     padding-left: 50px;
     padding-bottom: 100px;
+    padding-top: 20px;
 }
 
 .font{
@@ -61,11 +62,6 @@ justify-content: center; /* Plasserer innholdet horisontalt sentrert */
 
 }
 
-.syns{
-    max-width: 300px;
-    float: right;
-
-}
 
 .Ocean{
     max-width: 300px;
@@ -129,45 +125,4 @@ ul li a:hover {
  
 ul li:hover ul.dropdown {
     display: block;
-}
-
-/* For mobil, eller portrerttmodus, med låg oppløysing */
-@media screen and (max-width: 800px) {
-    /* Når skjermstørrelsen blir  */
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas:
-            'header'
-            'menu'
-            'main'
-            'footer';
-    }
-
-    /* 
-        Endrer menyen sitt design for mobil.
-        Menyelementene ligg ikkje lenger under kvarandre
-        (frå column til row). I tillegg så midtstiller
-        eg elementa i menyen.
-    */
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    /* Når skjermen er liten, så vil biletet i main ta heile bredda. */
-    .flyt {
-        float: none;
-        display: block;
-        max-width: 100%;
-        width: 100%;
-        justify-content: center;
-    }
-
-    /* Skriftstørrelsen i header blir mindre på mobil. */
-    #tittel {
-        font-size: 1rem;
-    }
 }
