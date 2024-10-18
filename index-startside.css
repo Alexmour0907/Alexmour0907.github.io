@@ -31,15 +31,14 @@
 
 }
 
-.item3{
-    padding-left: 100px;
-}
 
 .font{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 15px;
     padding-bottom: 5px;
+    padding-left: 20px;
 }
+
 
 * {
     padding: 0;
@@ -49,7 +48,7 @@
  
 ul {
     list-style: none;
-    background: #22438c;
+    background: #262262;
 }
  
 ul li {
@@ -72,14 +71,14 @@ ul li ul.dropdown li {
  
 ul li ul.dropdown {
     width: 100%;
-    background: #22438C;
+    background: #262262;
     position: absolute;
     z-index: 999;
     display: none;
 }
  
 ul li a:hover {
-    background: #112C66;
+    background: #1746ab;
 }
  
 ul li:hover ul.dropdown {
