@@ -18,7 +18,7 @@
         position: sticky;
         top: 0;
     }
-}
+
 .item2 { /* header */
     background: linear-gradient(270deg, #b0b5ad, #050609);
     color: white;
@@ -31,7 +31,15 @@
 
 }
 
+.item3{
+    padding-left: 100px;
+}
 
+.font{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
 
 * {
     padding: 0;
