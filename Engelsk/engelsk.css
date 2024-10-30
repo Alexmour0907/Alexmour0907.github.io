@@ -20,7 +20,7 @@
 }
 /* Header (item2) med stort bakgrunnsbilde */
 .item2 {
-    background-image: url(/Bilder/singapore-header.jpg); /* Sett filnavnet eller URL-en til bildet */
+    background-image: url(/SingaporeBilder/singapore-header.jpg); /* Sett filnavnet eller URL-en til bildet */
     background-size: cover; /* Gjør at bildet dekker hele området */
     background-position: center; /* Sentrer bildet */
     height: 500px; /* Høyden på headeren, kan justeres */
