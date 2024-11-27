@@ -14,13 +14,19 @@
         'footer footer  footer  footer  footer  footer';
 }
 
+html, body {
+    background-color: rgb(200, 209, 207);
+  
+}
+
 .item1{
-        position: sticky;
-        top: 0;
-    }
+    position: sticky;
+    top: 0;
+ 
+}
 
 .item2 { /* header */
-    background: linear-gradient(270deg, #b0b5ad, #050609);
+    background-color: rgb(82, 72, 139);
     color: white;
     text-align: center;
 
@@ -28,6 +34,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+    font-size: 40px;
 
 }
 
@@ -83,4 +91,25 @@ ul li a:hover {
  
 ul li:hover ul.dropdown {
     display: block;
+}
+
+.item3{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.boks{
+     
+    width: 30%;
+    height: 60px;
+    border: 15px solid rgb(255, 255, 255);
+    padding: 50px;
+    margin: 20px;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
