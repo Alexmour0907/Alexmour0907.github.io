@@ -102,7 +102,7 @@ ul li:hover ul.dropdown {
 
 .boks{
      
-    width: 30%;
+    width: 35%;
     height: 60px;
     border: 15px solid rgb(255, 255, 255);
     padding: 50px;
@@ -113,3 +113,12 @@ ul li:hover ul.dropdown {
     justify-content: space-around;
     align-items: center;
 }
+
+.boks h1 {
+    font-size: 1.1rem;
+}
+
+/* .boks_child{
+    display: flex;
+    text-align: center;
+} */
