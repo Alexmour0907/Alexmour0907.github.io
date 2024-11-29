@@ -123,6 +123,7 @@ ul li:hover ul.dropdown {
     text-align: center;
     color: white; /* Farge på teksten (hvit) */
     word-wrap: break-word; /* Bryter lange ord i overskriften */
+    text-decoration: underline;
 }
 
 .boks a {
