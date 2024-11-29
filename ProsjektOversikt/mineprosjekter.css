@@ -15,8 +15,7 @@
 }
 
 html, body {
-    background-color: rgb(200, 209, 207);
-  
+    background: linear-gradient(90deg, #120d0d, #32393f);
 }
 
 .item1{
@@ -26,7 +25,7 @@ html, body {
 }
 
 .item2 { /* header */
-    background-color: rgb(82, 72, 139);
+    background: linear-gradient(90deg, #1746ab, #1e90ff);
     color: white;
     text-align: center;
 
@@ -100,11 +99,10 @@ ul li:hover ul.dropdown {
     display: flex;
 }
 
-.boks{
-     
+.boks {
     width: 35%;
-    height: 60px;
-    border: 15px solid rgb(255, 255, 255);
+    border: 15px solid rgb(0, 0, 0);
+    background: linear-gradient(90deg, #1746ab, #1e90ff); /* Beholder gradient bakgrunn */
     padding: 50px;
     margin: 20px;
     border-radius: 4rem;
@@ -112,13 +110,62 @@ ul li:hover ul.dropdown {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    box-sizing: border-box; /* Sørger for at padding og ramme er inkludert i elementets totale størrelse */
+    word-wrap: break-word; /* Bryter lange ord slik at de holder seg innenfor boksen */
+    max-width: 90%; /* Sikrer at boksen ikke blir bredere enn 90% av skjermens bredde */
 }
 
 .boks h1 {
-    font-size: 1.1rem;
+    font-size: 36px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    color: white; /* Farge på teksten (hvit) */
+    word-wrap: break-word; /* Bryter lange ord i overskriften */
 }
 
-/* .boks_child{
-    display: flex;
+.boks a {
+    font-size: 24px;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: rgb(75, 46, 46); /* Farge på teksten (hvit) */
+    margin: 10px 0;
     text-align: center;
-} */
+    display: block;
+    transition: transform 0.3s ease, color 0.3s ease; /* Overgang for transformasjon og farge */
+    transform: scale(0.98); /* Lett de-skalering når musen ikke er over */
+}
+
+.boks a:hover {
+    color: white; /* Beholder tekstfargen hvit på hover */
+    background: none; /* Ingen bakgrunnsfarge på hover */
+    transform: scale(1.1); /* Øker størrelsen til 110% når du holder musepekeren over */
+}
+
+.boks a:active {
+    transform: scale(0.95); /* Skalerer teksten litt ned (de-scale) når du klikker på den */
+}
+
+
+/* Medieforespørsel for små skjermer */
+@media screen and (max-width: 768px) {
+    .boks {
+        width: 90%; /* Øker bredden på boksen på mindre skjermer */
+        padding: 20px; /* Reduserer padding for mer plass på små skjermer */
+    }
+
+    .boks h1 {
+        font-size: 28px; /* Justerer fontstørrelsen for overskriften på små skjermer */
+    }
+
+    .boks a {
+        font-size: 18px; /* Reduserer fontstørrelsen på lenkene på små skjermer */
+    }
+}
+
+
+    
+
+
+
