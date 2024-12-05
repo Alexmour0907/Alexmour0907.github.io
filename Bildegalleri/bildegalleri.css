@@ -15,8 +15,9 @@
 }
 
 html, body{
-    background-color: rgb(200, 209, 207);
+    background-color: rgb(255, 255, 255);
 }
+
 
 .font{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -27,7 +28,7 @@ html, body{
 
 
 * {
-    padding: 0;
+    padding: 0; 
     margin: 0;
     font-family: monospace;
 }
@@ -82,4 +83,30 @@ ul li:hover ul.dropdown {
     position: sticky;
     top: 0;
  
+}
+
+.item2 {
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.item3{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#bilde{
+    max-width: 600px;
+    border-radius: 70px;
+}
+
+.boks{
+    background-color: rgb(208, 205, 200);
+    padding: 2rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 10);
 }
