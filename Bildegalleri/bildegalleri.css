@@ -157,6 +157,7 @@ ul li:hover ul.dropdown {
     font-size: 20px;
 }
 
+/*fungerer ikke enda*/
 /* Medieforespørsel for små skjermer */
 @media screen and (max-width: 768px) {
     .boks {
@@ -174,6 +175,7 @@ ul li:hover ul.dropdown {
 
     html, h1{
         width: 90%;
+        font-size: 30px;
     }
 }
 
