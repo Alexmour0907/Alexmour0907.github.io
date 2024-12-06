@@ -25,8 +25,8 @@ function skiftBilde() {
 }
 
 let bildeGalleriMedTekst = [
-    { "bilde" : "Bil.jpg",            "bildeTekst" : "Et Flott bilde av en bil"},
-    { "bilde" : "Fjell_landskap.jpg", "bildeTekst" : "Fjell FTW!"}
+    { "bilde" : "TEST",            "bildeTekst" : "TEST NR1"},
+    { "bilde" : "Fjell_landskap.jpg", "bildeTekst" : "TEST NR2"}
 
 ];
 
@@ -34,13 +34,18 @@ console.log(bildeGalleriMedTekst[0].bilde);
 console.log(bildeGalleriMedTekst[0].bildeTekst)
 console.log(bildeGalleriMedTekst[1].bildeTekst)
 
+
+
+
 document.getElementById("btnForrige").addEventListener("click", forrigeBilde);
 document.getElementById("btnNeste").addEventListener("click", nesteBilde);
 
 function nesteBilde() {
     if (aktivtBilde < bildeGalleri.length -1) {
         aktivtBilde++; 
-        bildeKilde
+        bildeKilde = bilder[aktivtBilde]
+        document.getElementById("bilde").src = bildeKilde;
+        console.log(bildeKilde);
     } else {
         
     }
