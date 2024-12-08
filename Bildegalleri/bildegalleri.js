@@ -1,6 +1,5 @@
 let bilde = document.getElementById("bilde");
 
-
 let bildeGalleri = [
     "Bie på blomst.png",
     "Brann stadion.png",
@@ -8,57 +7,54 @@ let bildeGalleri = [
 ];
 
 let aktivtBilde = 0;
+let intervalId; // Referanse til setInterval
 
+// Setter første bilde
 bilde.src = "./Bilder til bildegalleri/" + bildeGalleri[aktivtBilde];
 
-setInterval(skiftBilde, 5000);
+// Funksjon for å starte bildegalleri med automatisk bytte
+function startAutoSwitch() {
+    intervalId = setInterval(skiftBilde, 7000);
+}
+
+// Starter automatisk bytte
+startAutoSwitch();
 
 function skiftBilde() {
-    aktivtBilde = aktivtBilde + 1;
-    if (aktivtBilde >= bildeGalleri.length) {     // Sjekker om jeg kommer utenfor arrayan, altså ikke noe bilder
-        aktivtBilde = 0;    
-    }
-    bilde.src = "./Bilder til bildegalleri/" + bildeGalleri[aktivtBilde]
+    aktivtBilde = (aktivtBilde + 1) % bildeGalleri.length; // Loop til start
+    bilde.src = "./Bilder til bildegalleri/" + bildeGalleri[aktivtBilde];
 }
 
-let bildeGalleriMedTekst = [
-    { "bilde" : "TEST",   "bildeTekst" : "TEST NR1"},
-    { "bilde" : "TEST",   "bildeTekst" : "TEST NR2"}
+// Navigasjonsknapper
+document.getElementById("btnForrige").addEventListener("click", () => {
+    clearInterval(intervalId); // Stopp eksisterende interval
+    forrigeBilde(); // Bytt til forrige bilde
+    startAutoSwitch(); // Start nytt interval
+});
 
-];
-
-console.log(bildeGalleriMedTekst[0].bilde);
-console.log(bildeGalleriMedTekst[0].bildeTekst)
-console.log(bildeGalleriMedTekst[1].bildeTekst)
-
-
-
-
-
-
-document.getElementById("btnForrige").addEventListener("click", forrigeBilde);
-document.getElementById("btnNeste").addEventListener("click", nesteBilde);
+document.getElementById("btnNeste").addEventListener("click", () => {
+    clearInterval(intervalId); // Stopp eksisterende interval
+    nesteBilde(); // Bytt til neste bilde
+    startAutoSwitch(); // Start nytt interval
+});
 
 function nesteBilde() {
-    if (aktivtBilde < bildeGalleri.length -1) {
-        aktivtBilde++; 
-        bildeKilde = bilder[aktivtBilde]
-        document.getElementById("bilde").src = bildeKilde;
-        console.log(bildeKilde);
+    if (aktivtBilde < bildeGalleri.length - 1) {
+        aktivtBilde++;
     } else {
-        console.log("utenfor array.length")
-        aktivtBilde = 0;
-        document.getElementById("bilde").src = bilde[aktivtBilde]   
+        aktivtBilde = 0; // Gå tilbake til første bilde
     }
+    bilde.src = "./Bilder til bildegalleri/" + bildeGalleri[aktivtBilde];
 }
 
-function forrigeBilde{
+function forrigeBilde() {
     if (aktivtBilde > 0) {
-        aktivtBilde = aktivtBilde - 1;
-        bildeKilde = bilde
+        aktivtBilde--;
     } else {
-        
+        aktivtBilde = bildeGalleri.length - 1; // Gå til siste bilde
     }
+    bilde.src = "./Bilder til bildegalleri/" + bildeGalleri[aktivtBilde];
 }
+
 
 
