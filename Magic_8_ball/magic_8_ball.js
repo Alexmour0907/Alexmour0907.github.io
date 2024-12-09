@@ -16,5 +16,3 @@ function spør() {
     console.log(tilfeldig);
     document.getElementById("bilde").src = "/Magic_8_ball/Bilder_til_magic8ball/SVG/" + listOfAwnsers[tilfeldig] + ".svg";
 }
-
-
