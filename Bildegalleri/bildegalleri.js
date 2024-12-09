@@ -14,7 +14,7 @@ bilde.src = "./Bilder til bildegalleri/" + bildeGalleri[aktivtBilde];
 
 // Funksjon for å starte bildegalleri med automatisk bytte
 function startAutoSwitch() {
-    intervalId = setInterval(skiftBilde, 7000);
+    intervalId = setInterval(skiftBilde, 10000);
 }
 
 // Starter automatisk bytte
