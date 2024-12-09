@@ -27,7 +27,7 @@ html, body{
 .item2 { /* header */
     background-color: pink;
     color: black;
-    padding: 40px;
+    padding: 10px;
     font-size: 32px;    
 
     /* Bruker flexbox for å plassere bildet/logoen og teksten i midten av headeren */
@@ -90,18 +90,37 @@ ul li:hover ul.dropdown {
 }
 
 .magic8ball{
-    position: relative; width: 550px;
+    width: 500px;
     margin: 20px;
+    z-index: 0;
 }
 
 #btnSpør{
     background-color: rgb(255, 92, 130);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 30px;
-    border-radius: 4rem;
+    border-radius: 8px;
+    margin: 10px;
     width: fit-content;
+    border: white;
 }
 
 #btnSpør:hover{
     background-color: rgb(216, 31, 31);
-    transform: scale(1,2);
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+
+#svar, p{
+    z-index: 1;
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    font-size: 16px;
+    color: greenyellow;
+    text-align: center;
+}
+
+#ballOgTekst{
+    position: relative;
 }
