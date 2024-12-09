@@ -14,31 +14,27 @@
         'footer footer  footer  footer  footer  footer';
 }
 
+html, body{
+    background-color: #222021;
+}
+
 .item1{
         position: sticky;
         top: 0;
     }
 
-.item2 { /* header */
-    background: linear-gradient(270deg, #b0b5ad, #050609);
+ .item2 { /* header */
+    background: linear-gradient(90deg, purple, #1746ab, #1746ab, #1e90ff);
     color: white;
     text-align: center;
-
+    
     /* Bruker flexbox for å plassere bildet/logoen og teksten i midten av headeren */
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-
-
-.font{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-}
-
+    padding: 1rem;
+    font-size: 40px;
+    }
 
 * {
     padding: 0;
