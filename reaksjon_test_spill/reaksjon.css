@@ -28,6 +28,7 @@ html, body{
     color: white;
     text-align: center;
     
+    
     /* Bruker flexbox for å plassere bildet/logoen og teksten i midten av headeren */
     display: flex;
     justify-content: center;
@@ -79,4 +80,37 @@ ul li a:hover {
  
 ul li:hover ul.dropdown {
     display: block;
+}
+
+#boks {
+    width: 95%;
+    height: 450px;
+    border: 20px solid rgb(255, 255, 255);
+    background: linear-gradient(90deg, #1746ab, #1e90ff); /* Beholder gradient bakgrunn */
+    padding: 50px;
+    margin: 20px;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Sørger for at padding og ramme er inkludert i elementets totale størrelse */
+    word-wrap: break-word; /* Bryter lange ord slik at de holder seg innenfor boksen */
+    max-width: 95%; /* Sikrer at boksen ikke blir bredere enn 90% av skjermens bredde */
+    cursor: pointer;
+}
+
+#boks, h1{
+    color: white;
+    font-size: 50px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#boks, p{
+    color: white;
+    font-size: 32px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
