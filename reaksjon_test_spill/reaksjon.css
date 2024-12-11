@@ -86,7 +86,7 @@ ul li:hover ul.dropdown {
     width: 95%;
     height: 450px;
     border: 20px solid rgb(255, 255, 255);
-    background: linear-gradient(90deg, #1746ab, #1e90ff); /* Beholder gradient bakgrunn */
+    background-color: #1746ab;
     padding: 50px;
     margin: 20px;
     border-radius: 4rem;
