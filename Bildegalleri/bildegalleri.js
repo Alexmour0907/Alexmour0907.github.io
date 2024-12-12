@@ -4,6 +4,7 @@ let bildeGalleri = [
     "Bie på blomst.png",
     "Brann stadion.png",
     "Pinguin.png",
+    "Gate_i_bergen.png",
 ];
 
 let aktivtBilde = 0;
