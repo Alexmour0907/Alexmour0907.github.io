@@ -1,3 +1,4 @@
+/* Grid og layout */
 .item1 {grid-area: menu;}
 .item2 {grid-area: header;}
 .item3 {grid-area: main;}
@@ -14,39 +15,38 @@
         'footer footer  footer  footer  footer  footer';
 }
 
+/* Bakgrunn */
 html, body {
     background: linear-gradient(90deg, #120d0d, #256297);
 }
 
+/* Sticky meny */
 .item1 {
     position: sticky;
     top: 0;
     z-index: 10; /* Sørger for at menyen er på toppen */
 }
 
-.item2 { /* header */
+/* Header */
+.item2 {
     background: linear-gradient(90deg, #1746ab, #1e90ff);
     color: white;
     text-align: center;
-
-    /* Bruker flexbox for å plassere bildet/logoen og teksten i midten av headeren */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     font-size: 40px;
-
 }
 
-
-.font{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    padding-left: 20px;
+/* Generelle stiler for tekst */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
 }
 
-
+/* Meny */
 * {
     padding: 0;
     margin: 0;
@@ -66,6 +66,9 @@ ul li {
 ul li a {
     display: block;
     padding: 20px 25px;
+      font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -92,75 +95,101 @@ ul li:hover ul.dropdown {
     display: block;
 }
 
-.item3{
+/* Hovedinnhold (Main) */
+.item3 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     display: flex;
+    padding-top: 30px;
 }
 
 .boks {
-    width: 90%;
-    height: 90%;
-    border: 15px solid rgb(0, 0, 0);
-    background: linear-gradient(90deg, #1746ab, #1e90ff); /* Beholder gradient bakgrunn */
-    padding: 50px;
-    margin: 20px;
-    border-radius: 4rem;
     display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: auto; /* Høyden justeres basert på innholdet */
+    background-color: #262262;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Venstre side: prosjekter */
+.projects {
+    width: 30%;
+    background-color: #1746ab;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box; /* Sørger for at padding og ramme er inkludert i elementets totale størrelse */
-    word-wrap: break-word; /* Bryter lange ord slik at de holder seg innenfor boksen */
-    max-width: 90%; /* Sikrer at boksen ikke blir bredere enn 90% av skjermens bredde */
+    text-align: center;
 }
 
-.boks h1 {
-    font-size: 36px;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-weight: bold;
+.projects ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
-    text-align: center;
-    color: white; /* Farge på teksten (hvit) */
-    word-wrap: break-word; /* Bryter lange ord i overskriften */
-    text-decoration: underline;
 }
 
-.boks a {
-    font-size: 24px;
-    font-family: 'Trebuchet MS', sans-serif;
+.projects li {
+    margin-bottom: 15px;
+}
+
+/* Lenker i prosjekter */
+.projects a {
     text-decoration: none;
-    color: rgb(75, 46, 46); /* Farge på teksten (hvit) */
-    margin: 10px 0;
-    text-align: center;
-    display: block;
-    transition: transform 0.3s ease, color 0.3s ease; /* Overgang for transformasjon og farge */
-    transform: scale(0.98); /* Lett de-skalering når musen ikke er over */
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
-.boks a:hover {
-    color: white; /* Beholder tekstfargen hvit på hover */
-    background: none; /* Ingen bakgrunnsfarge på hover */
+/* Hover på lenkene i prosjektene */
+.projects a:hover {
+    color: #c1d7ff;
+    background-color: transparent; /* Ingen bakgrunnsfarge på hover */
     transform: scale(1.1); /* Øker størrelsen til 110% når du holder musepekeren over */
 }
 
-.boks a:active {
+.projects a:active {
     transform: scale(0.95); /* Skalerer teksten litt ned (de-scale) når du klikker på den */
 }
 
+/* Høyre side: beskrivelser */
+.descriptions {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #262262;
+    border-radius: 10px;
+}
 
-/* Medieforespørsel for små skjermer */
-@media screen and (max-width: 768px) {
+.descriptions h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #c1d7ff;
+}
+
+.descriptions p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Responsivt design */
+@media (max-width: 768px) {
     .boks {
-        width: 90%; /* Øker bredden på boksen på mindre skjermer */
-        padding: 20px; /* Reduserer padding for mer plass på små skjermer */
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .boks h1 {
-        font-size: 28px; /* Justerer fontstørrelsen for overskriften på små skjermer */
-    }
-
-    .boks a {
-        font-size: 18px; /* Reduserer fontstørrelsen på lenkene på små skjermer */
+    .projects, .descriptions {
+        width: 100%; /* Fyller hele bredden */
     }
 }
