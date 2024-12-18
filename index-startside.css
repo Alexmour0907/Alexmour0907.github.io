@@ -19,17 +19,19 @@
         top: 0;
     }
 
-.item2 { /* header */
-    background: linear-gradient(270deg, #b0b5ad, #050609);
-    color: white;
-    text-align: center;
-
-    /* Bruker flexbox for å plassere bildet/logoen og teksten i midten av headeren */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
+    .item2 {
+        background-image: url(/); /* Sett filnavnet eller URL-en til bildet */
+        background: linear-gradient( #1c32e3, #2dacd2);
+        background-size: cover; /* Gjør at bildet dekker hele området */
+        background-position: center; /* Sentrer bildet */
+        height: 90vh; /* Høyden på headeren, kan justeres */
+        display: flex;
+        align-items: center; /* Plasserer innholdet vertikalt sentrert */
+        justify-content: center; /* Plasserer innholdet horisontalt sentrert */
+        color: white; /* Fargen på teksten */
+        font-size: 3em; /* Størrelsen på teksten */
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* Legg til en skygge bak teksten for bedre lesbarhet */
+    }
 
 
 .font{

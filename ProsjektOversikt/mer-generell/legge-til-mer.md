@@ -2,7 +2,10 @@
 
 ## Steg 1
 
-<li><a href="#newproject">Nytt Prosjekt</a></li> ta dette i projects class.
+<li>
+<a href="#newproject">Nytt Prosjekt</a>
+</li> 
+ta dette i projects class.
 
 ## steg 2
 
