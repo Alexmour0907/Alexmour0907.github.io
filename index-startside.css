@@ -25,16 +25,30 @@
         background-size: cover; /* Gjør at bildet dekker hele området */
         background-position: center; /* Sentrer bildet */
         height: 90vh; /* Høyden på headeren, kan justeres */
-        display: flex;
-        align-items: center; /* Plasserer innholdet vertikalt sentrert */
-        justify-content: center; /* Plasserer innholdet horisontalt sentrert */
         color: white; /* Fargen på teksten */
-        font-size: 3em; /* Størrelsen på teksten */
         text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* Legg til en skygge bak teksten for bedre lesbarhet */
     }
+    .item2, h1{
+        padding-top: 25px;
+        font-size: 2em; /* Størrelsen på teksten */
+    }
+    .item2, p{
+       display: flex;
+       flex-direction: column;
+       padding: 10PX;
+    }
+    /* .item2 a{
+        flex-direction: initial;
+    } */
 
 
-.font{
+.item3, h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+.item3, p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 15px;
     padding-bottom: 5px;
