@@ -56,6 +56,3 @@ function forrigeBilde() {
     }
     bilde.src = "./Bilder til bildegalleri/" + bildeGalleri[aktivtBilde];
 }
-
-
-
