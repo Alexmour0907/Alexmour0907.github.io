@@ -1,0 +1,183 @@
+.item1 {grid-area: menu;}
+.item2 {grid-area: header;}
+.item3 {grid-area: main;}
+.item4 {grid-area: footer;}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-areas:
+        'menu  menu   menu   menu  menu  menu'
+        'header header header header header header'
+        'main   main    main    main    main    main'
+        'footer footer  footer  footer  footer  footer';
+}
+
+.item1{
+        position: sticky;
+        top: 0;
+    }
+
+
+.item2{
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    margin: 30px 30px;
+    border-radius: 15px;
+}
+.item2 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 30px;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+}
+.item2 p{
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.item3{
+    display: flex;
+    justify-content: space-between;
+}
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Adjust the gap as needed */
+    padding: 20px; /* Add padding to the container */
+}
+
+.info-left, .info-right {
+    padding: 20px; /* Add padding to each column */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+.info-right{
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    margin: 30px 30px;
+    border-radius: 15px;
+    float: right;
+}
+
+.info-right img {
+    max-width: 100%; /* Ensure the image does not exceed the container's width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any inline spacing */
+}
+
+.info-left{
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    margin: 30px 30px;
+    border-radius: 15px;
+    float: right; 
+}
+.info-left p{
+    font-family: "Instrument Sans", serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.info-left h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.info-list {
+    list-style-type: disc; /* Bruk disk-kuler */
+    padding-left: 20px; /* Legg til padding til venstre */
+    margin: 20px 15px; /* Legg til margin til listen */
+    font-family: 'poppins', sans-serif;
+}
+
+.info-list li {
+    margin-bottom: 5px; /* Legg til margin til listeelementene */
+}
+
+.info-list li a:hover {
+    color: #22cc16; 
+    transform: translateX(10px);
+}
+
+.info-list li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    display: block; /* Make the link a block element */
+    transition: color 0.6s ease, transform 0.6s ease; /* Add transition for smooth effect */   
+}
+
+.stat-box{
+    background: rgb(132, 70, 70);
+    border-radius: 15px;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    background: #f1e9e9;
+    scroll-behavior: smooth;
+}
+ 
+.item1 ul {
+    list-style: none;
+    background: #262262;
+}
+ 
+.item1 ul li {
+    display: inline-block;
+    position: relative;
+}
+ 
+.item1 ul li a {
+    display: block;
+    padding: 20px 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic; 
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+ 
+.item1 ul li ul.dropdown li {
+    display: block;
+}
+ 
+.item1 ul li ul.dropdown {
+    width: 100%;
+    background: #262262;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ 
+.item1 ul li a:hover {
+    background: #1746ab;
+}
+ 
+.item1 ul li:hover ul.dropdown {
+    display: block;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: row;
+}
