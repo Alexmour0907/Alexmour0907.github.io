@@ -2,6 +2,7 @@
 .item2 {grid-area: header;}
 .item3 {grid-area: main;}
 .item4 {grid-area: footer;}
+.statistics {grid-area: statistics;}
 
 .grid-container {
     display: grid;
@@ -11,6 +12,7 @@
         'menu  menu   menu   menu  menu  menu'
         'header header header header header header'
         'main   main    main    main    main    main'
+        'statistics statistics statistics statistics statistics statistics'
         'footer footer  footer  footer  footer  footer';
 }
 
@@ -25,6 +27,7 @@
     background: #ffffff;
     margin: 30px 30px;
     border-radius: 15px;
+    border: 2px solid black;
 }
 .item2 h1{
     display: flex;
@@ -41,6 +44,7 @@
     font-weight: 600;
     font-size: 25px;
     margin: 10px;
+    
 }
 
 .item3{
@@ -65,12 +69,14 @@
     margin: 30px 30px;
     border-radius: 15px;
     float: right;
+    border: 2px solid black;
 }
 
 .info-right img {
     max-width: 100%; /* Ensure the image does not exceed the container's width */
     height: auto; /* Maintain the aspect ratio */
     display: block; /* Remove any inline spacing */
+    border-radius: 15px;
 }
 
 .info-left{
@@ -78,7 +84,8 @@
     background: #ffffff;
     margin: 30px 30px;
     border-radius: 15px;
-    float: right; 
+    border: 2px solid black;
+
 }
 .info-left p{
     font-family: "Instrument Sans", serif;
@@ -91,6 +98,20 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 30px;
+    margin: 10px;
+}
+
+.info-right h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.info-right p{
+    font-family: "Instrument Sans", serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
     margin: 10px;
 }
 
@@ -120,14 +141,13 @@
 
 .statistics {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #bd1111;
-    padding: 20px;
+    flex-direction: row;
+    /* align-items: center; */
+    background: #26262c;
+    padding: 20px 20px;
     border-radius: 15px;
     margin: 20px auto;
-    width: 90%;
-    width: 100%;
+    width: 1400px;
     clear: both;
 }
 
@@ -135,7 +155,7 @@
     background: rgb(255, 255, 255);
     border-radius: 15px;
     padding: 20px;
-    border: 2px solid black;
+    border: 10px solid black;
     width: 100%;
     margin-bottom: 20px;
 }
@@ -143,8 +163,9 @@
 .stat-text {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 23px;
+    margin-bottom: 70px;
+    text-decoration: underline;
 }
 
 .stat-items {
@@ -187,7 +208,26 @@
     border-radius: 15px;
     padding: 20px;
     width: 100%;
-    border: 2px solid black;
+    border: 10px solid black;
+    margin-left: 30px;
+}
+
+.text-box h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.text-box h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.text-box p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 * {
