@@ -102,65 +102,92 @@
 }
 
 .info-list li {
-    margin-bottom: 5px; /* Legg til margin til listeelementene */
+    margin-bottom: 5px;
 }
 
 .info-list li a:hover {
     color: #22cc16; 
     transform: translateX(10px);
 }
+
 .info-list li a {
     color: black;
     text-decoration: none;
     font-size: 20px;
-    display: block; /* Make the link a block element */
-    transition: color 0.6s ease, transform 0.6s ease; /* Add transition for smooth effect */   
+    display: block;
+    transition: color 0.6s ease, transform 0.6s ease;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #bd1111;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 90%;
+    width: 100%;
+    clear: both;
 }
 
 .stat-box {
     background: rgb(255, 255, 255);
     border-radius: 15px;
-    padding: 20px; /* Add padding to the container */
+    padding: 20px;
+    border: 2px solid black;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .stat-text {
-    text-align: center; /* Center-align the text */
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    margin-bottom: 20px; /* Add margin below the text */
+    margin-bottom: 20px;
 }
 
 .stat-items {
-    display: flex; /* Use Flexbox to place items side by side */
-    justify-content: space-around; /* Distribute space between the items */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .gammel_kake, .ny_kake {
-    flex: 1; /* Allow items to grow and shrink equally */
-    margin: 0 20px; /* Add more margin between the items */
-    text-align: center; /* Center-align text and images */
-    display: flex;
-    flex-direction: column; /* Arrange children in a column */
-    justify-content: space-between; /* Distribute space between children */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .gammel_kake img, .ny_kake img {
-    max-width: 100%; /* Ensure the image does not exceed the container's width */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 10px; /* Optional: Add border radius to images */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .source-text {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    color: #666; /* Example color for the source text */
-    margin-top: 10px; /* Add margin above the source text */
-    align-self: flex-end; /* Align the source text to the bottom */
+    color: #666;
+    margin-top: 10px;
 }
 
-.stat-box p a{
-    color: #372774; 
+.source-text a {
+    color: #666;
+    text-decoration: underline;
+}
+
+.source-text a:hover {
+    text-decoration: underline;
+}
+
+.text-box {
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    border: 2px solid black;
 }
 
 * {
