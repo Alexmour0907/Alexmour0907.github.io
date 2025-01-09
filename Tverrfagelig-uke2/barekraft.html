@@ -36,9 +36,9 @@
                 <div class="info-left">
                     <h2>Les om:</h2>
                     <ul class="info-list">
-                        <li><a href="#egentlig">Hva er det egentlig?</a></li>
-                        <li><a href="#viktig">Gjenvinning</a></li>
-                        <li><a href="#viktig">Miljøpåvirkning</a></li>
+                        <li><a id="egentlig-width" href="#egentlig">Hva er det egentlig?</a></li>
+                        <li><a id="viktig-width" href="#viktig">Viktig for Miljøet: Riktig Håndtering av Elektronikk Avfall</a></li>
+                        <li><a id="stat-width" href="#stat-scroll">Statistikk</a></li>
                     </ul>
                 </div>
                 <div class="info-right ">
@@ -50,7 +50,7 @@
                         Dette er ting som ofte inneholder miljøgifter og når kastes så må det bli levert til enten gjenvinningsstasjonene til Sirkula,
                         eller levere gratis til butikker som selger tilsvarende produkter. Butikker som selger elektronikk, har en plikt til å kunne ta imot EE-anfall.</p>
                 </div>
-                <div class="info-right">
+                <div class="info-right" id="viktig">
                     <h2>Viktig for Miljøet: Riktig Håndtering av Elektronikk Avfall</h2>
                     <p>I dag blir det produsert mer elektronisk utstyr enn noen gang før. 
                         Dette har naturlig vis også ført til mer og mer elektronisk avfall. 
@@ -59,24 +59,46 @@
                 </div>
             </div>
         </div>
-        <div class="statistics">
+        <div class="statistics" id="stat-scroll">
             <div class="stat-box">
-                <h1 class="stat-text">Sektordiagramer som viser utvikling av avfall inkludert EE-avfall</h1>
+                <h1 class="stat-text">Sektordiagramer som viser utvikling av EE-avfall avfall</h1>
                     <div class="stat-items">
                         <div class="gammel_kake">
                             <img src="/Tverrfagelig-uke2/bilder/Fn_global.png" alt="Picture 1">
-                            <p class="source-text"><a href="https://www.ssb.no/natur-og-miljo/statistikker/avfbygganl/aar/2011-12-13">Ssb avfall 2009-2010</a></p>
+                            <p class="source-text"><a href="https://unitar.org/about/news-stories/press/global-e-waste-monitor-2024-electronic-waste-rising-five-times-faster-documented-e-waste-recycling"> UN Global Waste monitor 2024</a></p>
                         </div>
                         <div class="ny_kake">
                             <img src="/Tverrfagelig-uke2/bilder/Fn_lastebil.png" alt="Picture 2">
-                            <p class="source-text"><a href="https://bir.no/om-bir/%C3%A5rsrapporten-2018/avfallsstatistikk/statistikk/">Bir årsrepport 2018</a></p>
+                            <p class="source-text"><a href="https://unitar.org/about/news-stories/press/global-e-waste-monitor-2024-electronic-waste-rising-five-times-faster-documented-e-waste-recycling">UN Global Waste monitor 2024</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="text-box">
-                    <h1>Global Statistikk</h1>
-                    <h2>Produksjon vs Resirkulert</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex blanditiis repellat quam velit neque exercitationem error non deleniti hic cumque, fugiat expedita ad rerum eos ducimus. Quidem explicabo dolorum sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quae molestiae suscipit doloremque neque. Maxime tempora laborum deserunt corporis beatae dolore at pariatur aliquam, deleniti consequuntur ut aspernatur. At, facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla voluptate id, eos dolorem soluta dolor dolorum ad velit vel provident sed neque ullam maxime, fugiat inventore quibusdam voluptates rerum fugit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. At corporis, quo minus libero eius, mollitia dolorum voluptate inventore nobis vitae eaque! Nemo aperiam repellendus qui voluptas ut vero, quaerat temporibus.</p>
+                    <div>
+                        <h1>Global Statistikk</h1>
+                        <h2>Produksjon vs Resirkulert</h2>
+                        <p>Vi har en global utfordring med sortering av elektrisk og elektronisk avfall. 
+                            Ifølge FN sinn «Global Waste monitor» for 2024, var det cirka bare 22,3% av EE-avfall som har blitt dokumentert som ordentlig sortert (2022).
+                             Det betyr at nesten $62 millioner USD (Amerikanske dollar), verdt av utvinnbare naturlige materialer er tapt og øker risikoen for utslipp.
+                        </p>
+                        <h2 class="calc-h2">Sjekk den oppdaterte USD/NOK konverteringen!</h2>
+                        <p>Lurer du på hvor mye $62 billioner USD (eller et annet beløp), er verdt i NOK? 
+                            Konverterings kalkulator min viser deg den oppdaterte verdien.</p>
+                    </div>
+                    <div class="currency-calculator">
+                        <div class="calc-header">
+                          <h1>Valutakalkulator</h1>
+                          <p>Konverter 62 billioner USD til NOK, eller angi et annet beløp.</p>
+                        </div>
+                        <div class="calc-content">
+                          <input type="number" class="usd-input" value="62000000000000" placeholder="Beløp i USD">
+                          <button class="convert-btn">Konverter</button>
+                          <p class="calc-result"></p>
+                        </div>
+                        <div class="calc-footer">
+                          <p>Oppdaterte valutakurser</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
