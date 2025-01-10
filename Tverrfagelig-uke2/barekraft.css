@@ -16,11 +16,6 @@
         'footer footer  footer  footer  footer  footer';
 }
 
-.item1{
-        position: sticky;
-        top: 0;
-    }
-
 
 .item2{
     color: rgb(0, 0, 0);
@@ -31,7 +26,6 @@
 }
 .item2 h1{
     display: flex;
-    align-items: center;
     justify-content: center;
     margin: 30px 30px;
     border-radius: 15px;
@@ -51,6 +45,21 @@
     display: flex;
     justify-content: space-between;
 }
+
+.item4{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262262;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.item4 p{
+    color: white;
+    font-size: 20px;
+}
+
 .info-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -309,7 +318,7 @@ html, body {
     padding: 20px;
     max-width: 400px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
   
   .calc-header {
@@ -369,3 +378,27 @@ html, body {
     color: #666;
   }
   
+  .monitor-link {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    background-color: #ffffff; /* Light background color */
+    padding: 2px 6px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+  }
+  
+  .monitor-link:hover {
+    color: #ffffff; /* Text color on hover */
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+
+  .quiz-box {
+    width: 80%;  /* Juster bredden etter behov */
+    max-width: 600px;  /* Maksimal bredde */
+    margin: 0 auto;  /* Sentrerer boksen */
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
