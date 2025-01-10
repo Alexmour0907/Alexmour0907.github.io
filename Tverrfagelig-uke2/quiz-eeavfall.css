@@ -5,7 +5,7 @@
 }
 
 html, body{
-    background: #c83a3a;
+    background: #F5F5DC;
     scroll-behavior: smooth;
 }
 
@@ -67,3 +67,125 @@ html, body{
     display: block;
 }
 
+.item2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.item2 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.item2 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.item2 h2 i{
+    color: #217b1a;
+}
+
+.item3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.quiz-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.quiz-box h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin: 20px 20px;
+    text-align: center;
+    
+}
+
+.answer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 15px;
+}
+
+.answer-btn1, .answer-btn2, .answer-btn3, .answer-btn4 {
+    width: 90%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.button-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.answer-btn1, .answer-btn2, .answer-btn3, .answer-btn4 {
+    color: #fff;
+    padding: 20px;
+    margin: 20px 20px;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    flex: 1;
+}
+
+.answer-btn1 {
+    background: #ff3355;
+}
+
+.answer-btn2 {
+    background: #45a3e5;
+}
+
+.answer-btn3 {
+    background: #66bf39;
+    margin-bottom: 40px;
+}
+
+.answer-btn4 {
+    background: #f9d10c;
+    margin-bottom: 40px;
+}
+
+.answer-btn1:hover, .answer-btn2:hover, .answer-btn3:hover, .answer-btn4:hover {
+    transform: scale(1.1);
+}
