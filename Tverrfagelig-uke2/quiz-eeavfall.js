@@ -1,68 +1,3 @@
-// const questions = [
-//     {
-//         question: "Hva er EE-avfall?",
-//         answers: ["Elektrisk og elektronisk avfall", "Energi og elektronisk avfall", "Elektronisk og elektrisk avfall", "Ingen av de ovennevnte"],
-//         correct: 0
-//     },
-//     {
-//         question: "Hvor skal EE-avfall leveres?",
-//         answers: ["Til gjenvinningsstasjoner", "Til vanlige søppelkasser", "Til butikker som selger elektronikk", "Begge alternativer 1 og 3"],
-//         correct: 3
-//     },
-//     {
-//         question: "Hvorfor er det viktig å sortere EE-avfall?",
-//         answers: ["For å redusere miljøgifter", "For å spare plass", "For å spare penger", "For å redusere energiforbruk"],
-//         correct: 0
-//     },
-//     {
-//         question: "Hva inneholder ofte EE-avfall?",
-//         answers: ["Miljøgifter", "Plast", "Papir", "Tre"],
-//         correct: 0
-//     },
-//     {
-//         question: "Hvem har plikt til å ta imot EE-avfall?",
-//         answers: ["Butikker som selger elektronikk", "Skoler", "Kontorer", "Ingen"],
-//         correct: 0
-//     }
-// ];
-
-// let currentQuestionIndex = 0;
-// let score = 0;
-
-// function loadQuestion() {
-//     const questionElement = document.getElementById("question");
-//     const answerButtons = document.querySelectorAll(".button-row button");
-
-//     questionElement.textContent = questions[currentQuestionIndex].question;
-//     answerButtons.forEach((button, index) => {
-//         button.textContent = questions[currentQuestionIndex].answers[index];
-//         button.onclick = () => nextQuestion(index); // Add event listener for button click
-//     });
-// }
-
-// function nextQuestion(selectedAnswer) {
-//     if (selectedAnswer === questions[currentQuestionIndex].correct) {
-//         score++;
-//     }
-
-//     currentQuestionIndex++;
-//     if (currentQuestionIndex < questions.length) {
-//         loadQuestion();
-//     } else {
-//         showSummary();
-//     }
-// }
-
-// function showSummary() {
-//     const questionElement = document.getElementById("question");
-//     const quizContainer = document.querySelector(".quiz-container");
-
-//     questionElement.textContent = `Gratulerer! Du har fullført quizen. Din poengsum er ${score} av ${questions.length}.`;
-//     quizContainer.innerHTML = ''; // Clear the quiz container
-// }
-
-// document.addEventListener("DOMContentLoaded", loadQuestion);
-
 const questions = [
     {
         question: "Hva er EE-avfall?",
@@ -112,7 +47,7 @@ function loadQuestion() {
     questionElement.textContent = currentQuestion.question;
     answerButtons.forEach((button, index) => {
         button.textContent = answers[index].answer;
-        button.onclick = () => nextQuestion(answers[index].index); // Add event listener for button click
+        button.onclick = () => nextQuestion(answers[index].index); 
     });
 }
 
