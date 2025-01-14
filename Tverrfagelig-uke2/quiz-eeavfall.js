@@ -1,3 +1,4 @@
+
 const questions = [
     {
         question: "Hva er EE-avfall?",
