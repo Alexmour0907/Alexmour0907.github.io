@@ -2,7 +2,7 @@
 const questions = [
     {
         question: "Hva er EE-avfall?",
-        answers: ["Elektrisk og elektronisk avfall", "Farlig avfall", "Gummi avfall", "Ingen av de svaralternativene"],
+        answers: ["Elektrisk og elektronisk avfall", "Ekstra-Ekstremt Farlig avfall", "Gummi avfall", "Ingen av de svaralternativene"],
         correct: 0
     },
     {

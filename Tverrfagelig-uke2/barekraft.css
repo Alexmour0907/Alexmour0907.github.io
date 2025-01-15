@@ -204,6 +204,10 @@
     margin-bottom: 10px;
 }
 
+.ny_kake{
+    padding-top: 200px;
+}
+
 .source-text {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -384,19 +388,13 @@ html, body {
     color: #666;
   }
   
-  .monitor-link {
+  .link {
     color: #007BFF; /* Link color */
     text-decoration: none; /* Remove underline */
     font-weight: bold; /* Make the text bold */
-    background-color: #ffffff; /* Light background color */
     padding: 2px 6px; /* Padding around the text */
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
-  }
-  
-  .monitor-link:hover {
-    color: #ffffff; /* Text color on hover */
-    background-color: #0056b3; /* Darker background color on hover */
   }
 
   .quiz-box {
@@ -424,3 +422,37 @@ html, body {
     background-color: #040404;
     color: white;
   }
+  .ai-article {
+    background: #f9f9f9; /* Background color for the ai-article box */
+    padding: 20px; /* Add padding to the container */
+    border-radius: 15px; /* Rounded corners for the ai-article box */
+    margin: 20px auto; /* Add margin to the ai-article box and center it */
+    width: 90%; /* Make the ai-article box cover most of the page */
+    max-width: 800px; /* Optional: Limit the maximum width */
+    text-align: left; /* Ensure text is aligned to the left */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.ai-article h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.ai-article p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.ai-article img {
+    max-width: 80%; /* Ensure the image does not exceed the container's width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any inline-block spacing */
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 10px; /* Optional: Add border radius to images */
+}
+
+#under-gptbilde{
+    margin-top: 20px;
+}
