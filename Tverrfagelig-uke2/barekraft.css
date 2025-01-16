@@ -445,6 +445,11 @@ html, body {
     margin-bottom: 10px;
 }
 
+.ai-article h5{
+    display: flex;
+    justify-content: center;
+}
+
 .ai-article p {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -462,3 +467,10 @@ html, body {
 #under-gptbilde{
     margin-top: 20px;
 }
+
+#under-aibilde{
+    margin-top: 20px;
+}
+
+
+
