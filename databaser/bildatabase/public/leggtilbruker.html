@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test: Legg til person</title>
+    <script>
+        // Hent postnummer frå serveren og fyll ut <select>-lista
+        async function hentPostnummer() {
+            const response = await fetch("/postnummer");
+            const postnummer = await response.json();
+
+            const select = document.getElementById("postnummer");
+            postnummer.forEach(post => {
+                const option = document.createElement("option");
+                option.value = post.postnummer;
+                option.textContent = `${post.postnummer} - ${post.poststed}`;
+                select.appendChild(option);
+            });
+        }
+
+        // Kall funksjonen når sida blir lasta inn
+        window.onload = hentPostnummer;
+
+        async function leggTilPerson(event) {
+            event.preventDefault(); // Forhindre standard form-innsending
+
+            const personnummer = document.getElementById("personnummer").value;
+            const fornavn = document.getElementById("fornavn").value;
+            const etternavn = document.getElementById("etternavn").value;
+            const passord = document.getElementById("passord").value;
+            const postnummer = document.getElementById("postnummer").value;
+
+            const response = await fetch("/leggtilperson", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    personnummer,
+                    fornavn,
+                    etternavn,
+                    postnummer,
+                    passord
+                })
+            });
+
+            const result = await response.json();
+            alert(result.message);
+        }
+    </script>
+</head>
+<body>
+    <h1>Legg til bruker</h1>
+    <form onsubmit="leggTilPerson(event)">
+        <label for="personnummer">Personnummer:</label>
+        <input type="text" id="personnummer" name="personnummer" required><br>
+
+        <label for="fornavn">Fornavn:</label>
+        <input type="text" id="fornavn" name="etternavn" required><br>
+
+        <label for="etternavn">Etternavn:</label>
+        <input type="text" id="etternavn" name="etternavn" required><br>
+
+        <label for="passord">Passord:</label>
+        <input type="passord" id="passord" name="passord" required><br>
+
+        <label for="postnummer">Postnummer:</label>
+        <select id="postnummer" name="postnummer" required>
+            <option value="" disabled selected>Velg postnummer</option>
+        </select><br>
+
+        <button type="submit">Legg til person</button>
+    </form>
+</body>
+</html>

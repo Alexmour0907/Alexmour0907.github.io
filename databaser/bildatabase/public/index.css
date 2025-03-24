@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #929292;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 650px;
+    padding: 1rem;
+    background-color: white;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
