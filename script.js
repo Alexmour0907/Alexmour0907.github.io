@@ -76,3 +76,45 @@ document.addEventListener('DOMContentLoaded', function() {
         fadeObserver.observe(element);
     });
 });
+
+/**
+ * Tema-bytter funksjonalitet
+ * Implementerer mørk/lys modus ved hjelp av localStorage for å huske brukerens preferanse
+ * og data-attribute for å styre CSS-stilene som brukes.
+ */
+document.addEventListener('DOMContentLoaded', () => {
+    // Henter referanse til tema-bryteren
+    const themeToggle = document.getElementById('theme-switch');
+    
+    /**
+     * Sjekker etter lagret brukerpreferanse
+     * Henter tema-preferansen fra localStorage og anvender den hvis den finnes.
+     * Dette sikrer at brukerens valg blir husket mellom besøk.
+     */
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        // Setter data-theme attributtet på dokumentets rot-element
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        // Hvis lagret tema er 'light', markerer vi bryteren som avkrysset
+        if (savedTheme === 'light') {
+            themeToggle.checked = true;
+        }
+    }
+    
+    /**
+     * Lytter etter endringer på tema-bryteren
+     * Oppdaterer tema når brukeren endrer posisjon på bryteren og 
+     * lagrer valget i localStorage for fremtidige besøk.
+     */
+    themeToggle.addEventListener('change', function() {
+        if (this.checked) {
+            // Aktiverer lyst tema
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        } else {
+            // Aktiverer mørkt tema
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+});
