@@ -560,22 +560,30 @@ nav ul li a:hover {
     box-shadow: var(--hover-shadow);
 }
 
+/* Improved project card image display */
 .project-image {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
     position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 62.5%; /* 16:10 aspect ratio - works well for most browser screenshots */
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .project-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+    object-fit: cover; /* Key property for handling screenshots */
+    object-position: top; /* Focus on the top part of the UI where most important elements usually are */
+    transition: transform 0.3s ease;
 }
 
+/* Optional hover effect */
 .project-card:hover .project-image img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .project-content {
