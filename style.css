@@ -90,7 +90,7 @@
 
 /* Fix nav background in light mode */
 [data-theme="light"] nav {
-    background-color: rgba(247, 247, 247, 0.95);
+    background: transparent;
 }
 
 /* Smooth transitions between themes - now faster */
