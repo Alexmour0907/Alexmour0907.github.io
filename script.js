@@ -224,13 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
             profileCard.addEventListener('pointerenter', handlePointerEnter);
             profileCard.addEventListener('pointermove', handlePointerMove);
             profileCard.addEventListener('pointerleave', handlePointerLeave);
-            
-            // Contact button functionality
-            if (contactBtn) {
-                contactBtn.addEventListener('click', function() {
-                    alert('Contact button clicked! You can integrate this with your contact section.');
-                });
-            }
+        
             
             // Initial animation
             const initialX = cardWrapper.clientWidth - 70;
