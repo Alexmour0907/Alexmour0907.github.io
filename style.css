@@ -73,22 +73,7 @@
 [data-theme="light"] .hire-cta p {
     color: #333;
 }
-
-/* Fix for the service cards and service icons in light mode */
-[data-theme="light"] .service-icon {
-    background-color: rgba(4, 150, 255, 0.1);
-}
-
-[data-theme="light"] .service-icon svg {
-    fill: var(--accent-color);
-}
-
-[data-theme="light"] .service-card:hover {
-    border-color: rgba(4, 150, 255, 0.5);
-    box-shadow: 0 10px 25px rgba(4, 150, 255, 0.1);
-}
-
-/* Fix nav background in light mode */
+/* Hire Me section light mode adjustments removed */
 [data-theme="light"] nav {
     background: transparent;
 }
@@ -665,85 +650,19 @@ nav ul li a:hover {
     flex: 1;
 }
 
-/* ===== 8. SERVICES SECTION ===== */
-#hire-me {
-    padding: 4rem 0;
-    background-color: #0a0a14;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.service-card {
-    background-color: var(--card-bg);
-    border-radius: 10px;
-    padding: 2rem;
-    transition: all var(--transition-fast);
-    box-shadow: var(--card-shadow);
-    border: 1px solid var(--border-subtle);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--hover-shadow);
-    border-color: rgba(100, 255, 218, 0.3);
-}
-
-.service-icon {
-    background-color: var(--accent-transparent);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-}
-
-.service-icon svg {
-    width: 35px;
-    height: 35px;
-    fill: var(--accent-color);
-}
-
-.service-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--text-main);
-}
-
-.service-card p {
-    color: var(--text-secondary);
-    line-height: 1.6;
-    font-size: 0.95rem;
-    flex-grow: 1;
-}
-
-.hire-cta {
-    text-align: center;
-    margin-top: 2rem;
-    padding: 2rem;
-    background-color: var(--accent-transparent);
-    border-radius: 10px;
-}
-
-.hire-cta p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    color: var(--text-main);
-}
-
 /* ===== 9. CONTACT SECTION ===== */
 #contact {
+    display: block;
     padding: 4rem 0;
     background-color: var(--darker-bg);
+    border-bottom: 1px solid var(--border-subtle);
+}
+#contact .container {
+    /* Use default .container styles for centering and max-width */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Social media icons */
@@ -828,15 +747,17 @@ nav ul li a:hover {
 
 /* ===== 10. FOOTER ===== */
 footer {
-    padding: 2rem 0;
+    display: block;
+    clear: both;
+    padding: 4rem 0;
     background-color: var(--darker-bg);
     color: var(--text-main);
     text-align: center;
     position: relative;
     z-index: 1;
-    clear: both;
     margin-top: 0;
     border-top: 1px solid var(--border-subtle);
+
 }
 
 /* ===== 11. ANIMATIONS ===== */
@@ -1095,11 +1016,12 @@ html {
     }
     
     .section-title {
-        font-size: 1.8rem;
-    }
-    
-    #hero h1 {
-        font-size: 2rem;
+            width: 100vw;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            padding: 2rem 0 2rem 0;
     }
     
     #hero h2 {
